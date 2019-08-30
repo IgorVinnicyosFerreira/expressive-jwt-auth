@@ -1,5 +1,5 @@
 {
-    "name": "wd7/jwt-auth",
+    "name": "IgorVinnicyosFerreira/expressive-jwt-auth",
     "description": "Autentica\u0000\u0000o, autoriza\u0000\u0000o com JWT Token e zend expressive middlewares",
     "type": "library",
     "require": {
@@ -16,5 +16,17 @@
             "name": "Igor Ferreira",
             "email": "vinicyosferreira@outlook.com"
         }
-    ]
+    ],
+    "repositories" : [
+        {
+            "type" : "vcs",
+            "url" : "https://github.com/IgorVinnicyosFerreira/expressive-jwt-auth"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WD7\\Auth\\": "src/"
+        }
+    }
 }
+
