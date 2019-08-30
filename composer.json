@@ -1,5 +1,5 @@
 {
-    "name": "IgorVinnicyosFerreira/expressive-jwt-auth",
+    "name": "igor-vinnicyos-ferreira/expressive-jwt-auth",
     "description": "Autentica\u0000\u0000o, autoriza\u0000\u0000o com JWT Token e zend expressive middlewares",
     "type": "library",
     "require": {
