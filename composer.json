@@ -1,42 +1,38 @@
 {
-    "name": "igor-vinnicyos-ferreira/expressive-jwt-auth",
-    "description": "Autentica\u0000\u0000o, autoriza\u0000\u0000o com JWT Token e zend expressive middlewares",
-    "type": "library",
-    "require": {
-        "php": "^7.1",
-        "psr/http-server-middleware": "^1.0",
-        "zendframework/zend-diactoros": "^2.1",
-        "zendframework/zend-expressive-helpers": "^5.3",
-        "psr/container": "^1.0",
-        "firebase/php-jwt": "^5.0",
-        "zendframework/zend-servicemanager": "^3.4"
-    },
-    "minimum-stability": "dev",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Igor Ferreira",
-            "email": "vinicyosferreira@outlook.com"
-        }
-    ],
-    "repositories" : [
-        {
-            "type" : "vcs",
-            "url" : "https://github.com/IgorVinnicyosFerreira/expressive-jwt-auth"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "igor-vinnicyos-ferreira\\": "src/"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "master": "1.0.x-dev"
-        },
-        "zf": {
-            "config-provider": "igor-vinnicyos-ferreira\\ConfigProvider"
-        }
+  "name": "igor-vinnicyos-ferreira/expressive-jwt-auth",
+  "description": "Autentica\u0000\u0000o, autoriza\u0000\u0000o com JWT Token e zend expressive middlewares",
+  "type": "library",
+  "require": {
+    "php": "^7.1",
+    "psr/http-server-middleware": "^1.0",
+    "zendframework/zend-diactoros": "^2.1",
+    "zendframework/zend-expressive-helpers": "^5.3",
+    "psr/container": "^1.0",
+    "firebase/php-jwt": "^5.0",
+    "zendframework/zend-servicemanager": "^3.4"
+  },
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Igor Ferreira",
+      "email": "vinicyosferreira@outlook.com"
     }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/IgorVinnicyosFerreira/expressive-jwt-auth"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "igor-vinnicyos-ferreira\\": "src/"
+    }
+  },
+  "extra": {
+    "zf": {
+      "config-provider": "igor-vinnicyos-ferreira\\ConfigProvider"
+    }
+  }
 }
-
