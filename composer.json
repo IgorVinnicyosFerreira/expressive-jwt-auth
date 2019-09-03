@@ -28,7 +28,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "igor\\expressive-jwt-auth": "src/"
+      "igor\\expressive-jwt-auth\\": "src/"
     }
   },
   "extra": {
