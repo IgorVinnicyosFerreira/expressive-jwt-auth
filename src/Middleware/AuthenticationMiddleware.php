@@ -1,16 +1,17 @@
 <?php
 
-namespace WD7\Auth\Middleware;
+namespace ExpressiveJWTAuth\Middleware;
 
 use Exception;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use WD7\Auth\JWT\JWT;
+use ExpressiveJWTAuth\JWT\JWT;
 use Zend\Diactoros\Response\JsonResponse;
 
-class AuthenticationMiddleware implements MiddlewareInterface {
+class AuthenticationMiddleware implements MiddlewareInterface
+{
 
     private $authConfig;
     private $urlHelper;
@@ -26,7 +27,7 @@ class AuthenticationMiddleware implements MiddlewareInterface {
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
         try {
-            
+
             $routeName = $this->urlHelper->getRouteResult()->getMatchedRouteName();
 
             if (isset($this->authConfig['ignoredRoutes'])) {

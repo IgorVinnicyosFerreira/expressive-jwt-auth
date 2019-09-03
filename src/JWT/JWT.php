@@ -1,12 +1,13 @@
 <?php
 
-namespace WD7\Auth\JWT;
+namespace ExpressiveJWTAuth\JWT;
 
 use Firebase\JWT as FirebaseJWT;
 use Exception;
 
-class JWT {
-    
+class JWT
+{
+
     private $key;
     private $alg;
     private $exp;
@@ -17,7 +18,7 @@ class JWT {
     public function __construct(array $jwtConfig)
     {
 
-        if(empty($jwtConfig))
+        if (empty($jwtConfig))
             throw new Exception("Configurações do token não informadas");
 
         if (!isset($jwtConfig['key']))
@@ -25,10 +26,10 @@ class JWT {
 
         $this->key = $jwtConfig['key'];
 
-        if(isset($jwtConfig['alg'])){
+        if (isset($jwtConfig['alg'])) {
             if (!key_exists($this->alg, FirebaseJWT::$supported_algs))
                 $this->alg = $jwtConfig['alg'];
-        }else {
+        } else {
             $this->alg = self::DEFAULT_ALG;
         }
 

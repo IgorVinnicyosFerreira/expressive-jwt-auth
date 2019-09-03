@@ -1,6 +1,6 @@
 <?php
 
-namespace WD7\Auth\Middleware;
+namespace ExpressiveJWTAuth\Middleware;
 
 use Exception;
 use Psr\Http\Message\ResponseInterface;

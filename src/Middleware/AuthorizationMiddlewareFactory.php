@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WD7\Auth\Middleware;
+namespace ExpressiveJWTAuth\Middleware;
 
 use Psr\Container\ContainerInterface;
 use Zend\Expressive\Helper\UrlHelper;

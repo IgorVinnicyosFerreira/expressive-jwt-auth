@@ -2,7 +2,7 @@
   "name": "igor-vinnicyos-ferreira/expressive-jwt-auth",
   "description": "Autentica\u0000\u0000o, autoriza\u0000\u0000o com JWT Token e zend expressive middlewares",
   "type": "library",
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true,
   "require": {
     "php": "^7.1",
@@ -28,12 +28,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "igor-vinnicyos-ferreira\\": "src/"
+      "igor\\expressive-jwt-auth": "src/"
     }
   },
   "extra": {
     "zf": {
-      "config-provider": "igor-vinnicyos-ferreira\\ConfigProvider"
+      "config-provider": "expressive-jwt-auth\\ConfigProvider"
     }
   }
 }

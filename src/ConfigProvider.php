@@ -1,14 +1,14 @@
 <?php
 
-namespace WD7\Auth;
+namespace ExpressiveJWTAuth;
 
 use Zend\ServiceManager\Factory\InvokableFactory;
-use WD7\Auth\JWT\JWT;
-use WD7\Auth\JWT\JWTFactory;
-use WD7\Auth\Middleware\AuthenticationMiddleware;
-use WD7\Auth\Middleware\AuthenticationMiddlewareFactory;
-use WD7\Auth\Middleware\AuthorizationMiddleware;
-use WD7\Auth\Middleware\AuthorizationMiddlewareFactory;
+use ExpressiveJWTAuth\JWT\JWT;
+use ExpressiveJWTAuth\JWT\JWTFactory;
+use ExpressiveJWTAuth\Middleware\AuthenticationMiddleware;
+use ExpressiveJWTAuth\Middleware\AuthenticationMiddlewareFactory;
+use ExpressiveJWTAuth\Middleware\AuthorizationMiddleware;
+use ExpressiveJWTAuth\Middleware\AuthorizationMiddlewareFactory;
 
 class ConfigProvider
 {
@@ -32,9 +32,7 @@ class ConfigProvider
     public function getDependencyConfig()
     {
         return [
-            'aliases' => [
-
-            ],
+            'aliases' => [],
             'factories' => [
                 JWt::class => JWTFactory::class,
                 AuthenticationMiddleware::class => AuthenticationMiddlewareFactory::class,
@@ -42,7 +40,4 @@ class ConfigProvider
             ],
         ];
     }
-
-
-    
 }

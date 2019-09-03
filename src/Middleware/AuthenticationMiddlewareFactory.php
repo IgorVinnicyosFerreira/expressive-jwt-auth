@@ -1,10 +1,10 @@
 <?php
 
-namespace WD7\Auth\Middleware;
+namespace ExpressiveJWTAuth\Middleware;
 
 use Zend\ServiceManager\Factory\FactoryInterface;
 use Interop\Container\ContainerInterface;
-use WD7\Auth\JWT\JWT;
+use ExpressiveJWTAuth\JWT\JWT;
 use Zend\Expressive\Helper\UrlHelper;
 
 class AuthenticationMiddlewareFactory implements FactoryInterface
@@ -15,7 +15,7 @@ class AuthenticationMiddlewareFactory implements FactoryInterface
         $authConfig = isset($container->get('config')['authConfig'])
             ? $container->get('config')['authConfig']
             : [];
-            
+
         $urlHelper = $container->get(UrlHelper::class);
         $JWT = $container->get(JWT::class);
 

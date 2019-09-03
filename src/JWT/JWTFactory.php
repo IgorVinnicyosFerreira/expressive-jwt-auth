@@ -1,6 +1,6 @@
 <?php
 
-namespace WD7\Auth\JWT;
+namespace ExpressiveJWTAuth\JWT;
 
 use Zend\ServiceManager\Factory\FactoryInterface;
 use Interop\Container\ContainerInterface;
@@ -13,7 +13,7 @@ class JWTFactory implements FactoryInterface
         $jwtConfig = isset($container->get('config')['authConfig'])
             ? $container->get('config')['authConfig']['jwt']
             : [];
-            
+
         return new JWT($jwtConfig);
     }
 }
