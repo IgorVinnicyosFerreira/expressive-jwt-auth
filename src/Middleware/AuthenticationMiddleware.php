@@ -56,4 +56,13 @@ class AuthenticationMiddleware implements MiddlewareInterface
             return new JsonResponse(["error" => $error->getMessage()], 401);
         }
     }
+
+    private function getToken(ServerRequestInterface $request): string
+    {
+        $authorizationHeader = $request->getHeader('authorization');
+        if (!$authorizationHeader)
+            throw new Exception("Authorization header não informado");
+        $token = str_replace("Bearer ", "", $authorizationHeader[0]);
+        return $token ?? "";
+    }
 }
