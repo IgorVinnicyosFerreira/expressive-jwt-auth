@@ -4,6 +4,7 @@ namespace ExpressiveJWTAuth\JWT;
 
 use Firebase\JWT\JWT as FirebaseJWT;
 use Exception;
+use Zend\Diactoros\Response\JsonResponse;
 
 class JWT
 {
