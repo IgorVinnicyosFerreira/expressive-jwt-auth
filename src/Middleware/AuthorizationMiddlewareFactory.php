@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace ExpressiveJWTAuth\Middleware;
 
-use Psr\Container\ContainerInterface;
+use Interop\Container\ContainerInterface;
 use Zend\Expressive\Helper\UrlHelper;
 use Zend\ServiceManager\Factory\FactoryInterface;
 
