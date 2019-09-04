@@ -9,6 +9,7 @@ use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use ExpressiveJWTAuth\JWT\JWT;
 use Zend\Diactoros\Response\JsonResponse;
+use Zend\Expressive\Helper\UrlHelper;
 
 class AuthenticationMiddleware implements MiddlewareInterface
 {
