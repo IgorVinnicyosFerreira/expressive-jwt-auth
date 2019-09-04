@@ -2,7 +2,7 @@
 
 namespace ExpressiveJWTAuth\JWT;
 
-use Firebase\JWT as FirebaseJWT;
+use Firebase\JWT\JWT as FirebaseJWT;
 use Exception;
 
 class JWT
