@@ -28,12 +28,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "igor\\expressive-jwt-auth\\": "src/"
+      "ExpressiveJWTAuth\\": "src/"
     }
   },
   "extra": {
     "zf": {
-      "config-provider": "expressive-jwt-auth\\ConfigProvider"
+      "config-provider": "ExpressiveJWTAuth\\ConfigProvider"
     }
   }
 }
